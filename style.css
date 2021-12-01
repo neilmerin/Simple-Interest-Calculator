@@ -94,3 +94,7 @@ footer {
   align-self: flex-start;
   padding-left: 3rem;
 }
+
+.highlight {
+  color: yellow;
+}
