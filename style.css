@@ -16,3 +16,8 @@ h1 {
   border-radius: 20px;
   align: center;
 }
+
+.maindiv > footer {
+  margin: 0 auto;
+  text-align: center;
+}
