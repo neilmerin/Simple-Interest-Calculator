@@ -4,17 +4,17 @@ function compute() {
     alert("Enter a positive number");
     return principal.focus();
   }
-  var rate = document.getElementById("rate").value;
-  var years = document.getElementById("years").value;
-  var year = new Date().getFullYear() + parseInt(years);
-  var interest_result = document.getElementById("interest_result");
+  let rate = document.getElementById("rate");
+  let years = document.getElementById("years");
+  let year = new Date().getFullYear() + parseInt(years.value);
+  let interest_result = document.getElementById("interest_result");
   interest_result.style.visibility = "visible";
-  var interest = (principal.value * years * rate) / 100;
+  let interest = (principal.value * years.value * rate.value) / 100;
 
   document.getElementById(
     "result"
-  ).innerHTML = `If you deposit <b>${principal.value}</b> at an interest rate of <b>${rate} %.</b>
-  You will receive an amount of <b>${interest}</b> in the year <b>${year}</b> <br>`;
+  ).innerHTML = `If you deposit <b class="highlight">${principal.value}</b> at an interest rate of <b class="highlight">${rate.value} %.</b>
+  You will receive an amount of <b class="highlight">${interest}</b> in the year <b class="highlight">${year}</b> <br>`;
 }
 
 function updateRate() {
