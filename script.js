@@ -5,3 +5,8 @@ function compute() {
   var year = new Date().getFullYear() + parseInt(years);
   var interest = (principal * years * rate) / 100;
 }
+
+function updateRate() {
+  var rateval = document.getElementById("rate").value;
+  document.getElementById("rate_val").innerText = rateval;
+}
