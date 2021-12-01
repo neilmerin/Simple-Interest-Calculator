@@ -46,20 +46,15 @@ label {
 input,
 select {
   width: 20rem;
-  padding-top: 0.75rem;
+  padding: 0.25rem;
   line-height: 100%;
   vertical-align: middle;
-}
-
-select {
-  padding: 0.5rem;
 }
 
 input[type="number"] {
   outline: none;
   border-radius: 0.5rem solid white;
   outline-color: white;
-  padding: 0.5rem;
   -webkit-appearance: none;
   -moz-appearance: textfield;
 }
@@ -70,8 +65,9 @@ input[type="range"] {
 
 button {
   padding: 0.5rem;
+  margin-top: 1rem;
   width: 10rem;
-  height: 2.5rem;
+  height: 2rem;
   align-self: center;
   font-weight: bold;
   color: white;
@@ -95,4 +91,6 @@ footer {
 
 #interest_result {
   visibility: hidden;
+  align-self: flex-start;
+  padding-left: 3rem;
 }
