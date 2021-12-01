@@ -81,7 +81,8 @@ footer {
 }
 
 #rate_val {
-  width: 10px;
+  width: 5rem;
+  height: 1rem;
 }
 
 #result {
@@ -97,4 +98,14 @@ footer {
 
 .highlight {
   color: yellow;
+}
+
+#range_container {
+  width: 20rem;
+  padding: 0.25rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
