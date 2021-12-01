@@ -32,6 +32,36 @@ body {
   box-shadow: 3px 2px 5px orangered;
 }
 
+.highlight {
+  color: yellow;
+}
+
+#rate_val {
+  width: 5rem;
+  height: 1rem;
+}
+
+#result {
+  text-align: justify;
+  padding: 0 3rem 1rem;
+}
+
+#interest_result {
+  visibility: hidden;
+  align-self: flex-start;
+  padding-left: 3rem;
+}
+
+#range_container {
+  width: 20rem;
+  padding: 0.25rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 h1 {
   color: whitesmoke;
   font-family: verdana;
@@ -43,7 +73,7 @@ label {
   padding: 0.5rem 0;
 }
 
-input,
+input[type="number"],
 select {
   width: 20rem;
   padding: 0.25rem;
@@ -78,34 +108,4 @@ button {
 footer {
   margin: 0 auto;
   text-align: center;
-}
-
-#rate_val {
-  width: 5rem;
-  height: 1rem;
-}
-
-#result {
-  text-align: justify;
-  padding: 0 3rem 1rem;
-}
-
-#interest_result {
-  visibility: hidden;
-  align-self: flex-start;
-  padding-left: 3rem;
-}
-
-.highlight {
-  color: yellow;
-}
-
-#range_container {
-  width: 20rem;
-  padding: 0.25rem;
-  display: flex;
-  gap: 1rem;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
