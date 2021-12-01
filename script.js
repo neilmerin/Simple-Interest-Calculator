@@ -2,6 +2,11 @@ function compute() {
   let principal = document.getElementById("principal");
   if (principal.value <= 0) {
     alert("Enter a positive number");
+
+  interest_result.style.visibility = "hidden";
+    document.getElementById(
+    "result"
+  ).innerHTML = null
     return principal.focus();
   }
   let rate = document.getElementById("rate");
