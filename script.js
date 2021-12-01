@@ -1,18 +1,17 @@
 function compute() {
   let principal = document.getElementById("principal");
+  let interest_result = document.getElementById("interest_result");
+
   if (principal.value <= 0) {
     alert("Enter a positive number");
-
-  interest_result.style.visibility = "hidden";
-    document.getElementById(
-    "result"
-  ).innerHTML = null
+    interest_result.style.visibility = "hidden";
+    document.getElementById("result").innerHTML = null;
     return principal.focus();
   }
+
   let rate = document.getElementById("rate");
   let years = document.getElementById("years");
   let year = new Date().getFullYear() + parseInt(years.value);
-  let interest_result = document.getElementById("interest_result");
   interest_result.style.visibility = "visible";
   let interest = (principal.value * years.value * rate.value) / 100;
 
