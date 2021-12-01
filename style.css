@@ -83,3 +83,12 @@ footer {
 #rate_val {
   width: 10px;
 }
+
+#result {
+  text-align: justify;
+  padding: 0 3rem 1rem;
+}
+
+#interest_result {
+  visibility: hidden;
+}
