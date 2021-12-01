@@ -5,8 +5,6 @@ function compute() {
   var year = new Date().getFullYear() + parseInt(years);
   var interest = (principal * years * rate) / 100;
 
-  console.log(interest, year, years);
-
   document.getElementById("result").innerHTML =
     "If you deposit " +
     principal +
