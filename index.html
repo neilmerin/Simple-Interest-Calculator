@@ -13,7 +13,15 @@
       <h1>Simple Interest Calculator</h1>
 
       Amount <input type="number" id="principal" /> <br />
-      Rate <input type="range" id="rate" /> <br />
+      Rate
+      <input
+        type="range"
+        id="rate"
+        min="minval"
+        max="maxval"
+        value="default_val"
+      />
+      <br />
       No. of Years <input type="number" id="years" /> <br />
       Interest : <span id="result"></span><br />
 
