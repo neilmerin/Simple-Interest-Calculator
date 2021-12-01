@@ -9,9 +9,8 @@ function compute() {
   var year = new Date().getFullYear() + parseInt(years);
   var interest = (principal.value * years * rate) / 100;
 
-  document.getElementById(
-    "result"
-  ).innerHTML = `If you deposit <b>${principal.value}</b> at an interest rate of <b>${rate} %.</b>
+  var result = document.getElementById("result");
+  result.innerHTML = `If you deposit <b>${principal.value}</b> at an interest rate of <b>${rate} %.</b>
   You will receive an amount of <b>${interest}</b> in the year <b>${year}</b> <br>`;
 }
 
